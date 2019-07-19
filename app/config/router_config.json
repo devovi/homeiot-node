@@ -1,0 +1,36 @@
+{
+  "Building":{
+    "name":"Building Router",
+    "filePath":"./app/iot/app/router/http/building_router.js",
+    "switch":1
+  },
+  "Floor":{
+    "name":"Floor Router",
+    "filePath":"./app/iot/app/router/http/floor_router.js",
+    "switch":1
+  },
+
+  "unit":{
+    "name":"Unit Router",
+    "filePath":"./app/iot/app/router/http/unit_router.js",
+    "switch":1
+  },
+  "Sensormaster":{
+    "name":"Sensormaster Router",
+    "filePath":"./app/iot/app/router/http/sensormaster_router.js",
+    "switch":1
+  },
+  "Sensorcontrol":{
+    "name":"Sensorcontrol Router",
+    "filePath":"./app/iot/app/router/http/sensorcontrol_router.js",
+    "switch":1
+  },
+  "Sensordata":{
+    "name":"Sensordata Router",
+    "filePath":"./app/iot/app/router/http/sensordata_router.js",
+    "switch":1
+  }
+
+
+
+}
