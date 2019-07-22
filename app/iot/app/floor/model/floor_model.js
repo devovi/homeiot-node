@@ -3,9 +3,9 @@ const mongoosePaginate = require('mongoose-paginate');
 
 const floor = mongoose.Schema({
 
-  buildingid: { type: String, required: true },
+  buildingid: {type: mongoose.Schema.Types.ObjectId, ref: 'buildings'},
   floorname:{type:String},
-  description:{ type: String},
+  description:{ type: String, default:""},
   deleted:{type:Boolean , default:false}
 
 },

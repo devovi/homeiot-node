@@ -5,7 +5,7 @@ const unit = mongoose.Schema({
 
   floorid: { type: String, required: true },
   unitname:{type:String},
-  description:{ type: String},
+  description:{ type: String, default:""},
   deleted:{type:Boolean , default:false}
 
 },
@@ -15,6 +15,6 @@ const unit = mongoose.Schema({
     updatedAt: 'updatedAt'
   }
 });
-floor.plugin(mongoosePaginate);
+unit.plugin(mongoosePaginate);
 
 module.exports = mongoose.model('unit', unit);

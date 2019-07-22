@@ -29,6 +29,11 @@
     "name":"Sensordata Router",
     "filePath":"./app/iot/app/router/http/sensordata_router.js",
     "switch":1
+  },
+  "Provisioning":{
+    "name":"Provisioning Router",
+    "filePath":"./app/iot/app/router/http/Provisioning_router.js",
+    "switch":1
   }
 
 

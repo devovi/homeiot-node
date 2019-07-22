@@ -3,8 +3,13 @@ const mongoosePaginate = require('mongoose-paginate');
 
 const sensordata = mongoose.Schema({
 
-  sensorcontrolid: { type: String, required: true },
-  sensordata:{type:String},
+  sensorcontrolid: { type: String, default:"" },
+  sensordata:[{
+          temperature: String,
+          led: String,
+          proximity: String,
+          optical: String,
+  }],
 
   deleted:{type:Boolean , default:false}
 
@@ -15,6 +20,6 @@ const sensordata = mongoose.Schema({
     updatedAt: 'updatedAt'
   }
 });
-floor.plugin(mongoosePaginate);
+sensordata.plugin(mongoosePaginate);
 
 module.exports = mongoose.model('sensordata', sensordata);
